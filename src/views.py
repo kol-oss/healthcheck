@@ -7,7 +7,7 @@ def source_get():
     return "Try to visit /healthcheck"
 
 @app.route('/healthcheck', methods=['GET'])
-def healthcheck_get(status=None):
+def healthcheck_get():
     # Endpoint has to return response code 200
     # Response body should contain current date and server status
 
